@@ -90,8 +90,8 @@
     {
       "number": "03",
       "title": "Opioids / poppy",
-      "science_tag": "papaver somniferum · endorphins",
-      "text": "Papaver somniferum runs through Assyrian, Sumerian, Egyptian and Chinese medicine. The body also makes its own opioids, released by hard exertion.",
+      "science_tag": "papaver somniferum · endorphins · overdose",
+      "text": "Papaver somniferum runs through Assyrian, Sumerian, Egyptian and Chinese medicine. The body also makes its own opioids, released by hard exertion, and morphine works by borrowing the same receptors. That borrowing has a cost. In the United States, overdose deaths came in three waves: prescription painkillers from the late 1990s, heroin from 2010, and illegally made fentanyl from 2013. Between 1999 and 2023 about 806,000 people there died of an opioid overdose, and in 2017 the crisis was declared a public health emergency. The molecule that eases pain can also end a life.",
       "images": [
         {
           "image": "images/flower_for_healing.jpg",
@@ -111,14 +111,23 @@
       ],
       "strip_label": "",
       "strip": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Understanding the opioid overdose epidemic — CDC",
+          "url": "https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html"
+        },
+        {
+          "label": "The opioid crisis becomes a public health emergency — New York Times, 2017",
+          "url": "https://www.nytimes.com/2017/10/26/us/opioid-crisis-public-health-emergency.html"
+        }
+      ],
       "pair_images": false
     },
     {
       "number": "04",
       "title": "Overcoming",
-      "science_tag": "deferral · attention",
-      "text": "In the trenches, in devotion and ritual, brain mechanisms defer pain in favour of something judged more urgent.",
+      "science_tag": "deferral · attention · placebo",
+      "text": "In the trenches, in devotion and ritual, brain mechanisms defer pain in favour of something judged more urgent. Expectation does it too. Treating wounded soldiers in the Second World War, the anaesthetist Henry Beecher saw that how much pain people report depends on context as much as on the injury. In 1978, Levine and colleagues showed that placebo pain relief disappears when the opioid blocker naloxone is given: the brain had been releasing its own opioids. And morphine injected in front of a patient relieves more pain than the same dose given out of sight. What we expect is part of the dose.",
       "images": [
         {
           "image": "images/pushing_through.jpg",
@@ -133,7 +142,12 @@
       ],
       "strip_label": "",
       "strip": [],
-      "links": [],
+      "links": [
+        {
+          "label": "How placebo pain relief came to be studied — Benedetti, Frontiers in Pain Research, 2022",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9399436/"
+        }
+      ],
       "pair_images": false
     },
     {
@@ -162,7 +176,7 @@
       "number": "06",
       "title": "Tactile sensation",
       "science_tag": "cutaneous receptors · bonding",
-      "text": "Touch as a social bond — a caress, petting a dog — carried by specialised cutaneous receptors connected to nerves.",
+      "text": "Touch as a social bond — a caress, petting a dog — carried by specialised cutaneous receptors connected to nerves. Touch is not one sense but a landscape of them. Merkel cells read gentle pressure, Meissner corpuscles catch the flutter of something sliding over a fingertip, Ruffini endings register the skin stretching, Pacinian corpuscles feel deep vibration, and fibres wrapped around hair follicles sense a stroke. Sorting nerve cells by the genes they use has so far found about 18 kinds, some tuned to a caress, others to temperature, irritants and painful heat: the same skin carries comfort and alarm.",
       "images": [
         {
           "image": "images/healing_touches.jpg",
@@ -177,7 +191,12 @@
       ],
       "strip_label": "",
       "strip": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Touch, our most complex sense — Quanta Magazine, 2025",
+          "url": "https://www.quantamagazine.org/touch-our-most-complex-sense-is-a-landscape-of-cellular-sensors-20250416/"
+        }
+      ],
       "pair_images": false
     }
   ],
