@@ -21,6 +21,15 @@
       "felt_caption": "Here the artist reworks a real circuit into something closer to feeling — bloom, spark, a private landscape.",
       "measured_caption": "The same circuit, measured: Grpr+ neurons in the parabrachial nucleus, unedited.",
       "credit": "Left — digital work, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc"
+    },
+    {
+      "felt": "images/lab/oxali_art.webp",
+      "felt_alt": "Stylised version of a calcium-imaging movie: glowing purple and yellow blobs on black",
+      "measured": "images/lab/minis_raw.webp",
+      "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in cyan and blue on black",
+      "felt_caption": "The same recording, re-coloured until it reads less like data and more like a pulse.",
+      "measured_caption": "The same recording, measured: neurons in a mouse thalamus imaged live as cold becomes painful. Each bright patch is one cell's calcium signal.",
+      "credit": "Left — stylised version · Right — still from a miniscope recording, Barik Lab, IISc"
     }
   ],
   "quote": "The paintings try to catch the experience of pain rather than accurately illustrating any scientific process.",

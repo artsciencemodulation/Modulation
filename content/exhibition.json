@@ -18,6 +18,11 @@
           "image": "images/touching.jpg",
           "caption": "Touching",
           "type": "art"
+        },
+        {
+          "image": "images/lab/minis_raw.webp",
+          "caption": "Miniscope calcium imaging, mouse thalamus during cold pain — a single frame from the recording · Barik Lab, IISc",
+          "type": "science"
         }
       ],
       "strip_label": "",
@@ -85,7 +90,52 @@
           "url": "https://neosciencehub.com/when-pain-becomes-invisible-understanding-the-neuroscience-and-reality-of-chronic-suffering/"
         }
       ],
-      "pair_images": true
+      "pair_images": true,
+      "colour_sets": [
+        {
+          "label": "Colour is a choice",
+          "title": "c-Fos in PBN-Tacr1 neurons — three colourings",
+          "about": "A section through the parabrachial nucleus of a mouse in a model of nociplastic pain. Each bright dot is a neuron that was recently active. The same section is shown three ways.",
+          "credit": "Barik Lab, IISc",
+          "maps": [
+            {
+              "name": "Red and green",
+              "src": "images/lab/pbn_0.webp",
+              "alt": "Parabrachial section: red fibres and cells on a dark ground with scattered green dots",
+              "note": "Two colour channels over black. The bright red patch is where the signal gathers."
+            },
+            {
+              "name": "Magenta and violet",
+              "src": "images/lab/pbn_1.webp",
+              "alt": "The same section in a magenta and violet pseudocolour scale, with white dots",
+              "note": "Brightness mapped onto a magenta-to-violet scale. The lit-up region reads as a glow."
+            },
+            {
+              "name": "Magenta and violet, stronger",
+              "src": "images/lab/pbn_2.webp",
+              "alt": "The same section in a more saturated magenta and violet pseudocolour scale",
+              "note": "The same scale with more contrast: faint cells stand out more, and so does the noise."
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "label": "How to read a c-Fos image",
+          "title": "Ninety minutes late",
+          "text": "c-Fos is a protein that active neurons begin to make. It builds up slowly: in most studies it peaks roughly 90 to 120 minutes after the stimulus, though the timing varies with the stimulus and the brain region.\n\nSo a c-Fos image is not a live picture of pain. It is an after-image, a trace of what a group of cells did a little while earlier. Khushbu Patel's [Diary Pages](#diary) record time another way, one page at a time, by hand.",
+          "links": [
+            {
+              "label": "Open-access review on c-Fos (PMC6045948)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6045948/"
+            },
+            {
+              "label": "Gao & Ji, 2009 (PMC2773551)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2773551/"
+            }
+          ]
+        }
+      ]
     },
     {
       "number": "03",
@@ -119,9 +169,76 @@
         {
           "label": "The opioid crisis becomes a public health emergency — New York Times, 2017",
           "url": "https://www.nytimes.com/2017/10/26/us/opioid-crisis-public-health-emergency.html"
+        },
+        {
+          "label": "The misuse of colour in science communication — Crameri, Shephard & Heron, Nature Communications 2020",
+          "url": "https://doi.org/10.1038/s41467-020-19160-7"
         }
       ],
-      "pair_images": false
+      "pair_images": false,
+      "colour_sets": [
+        {
+          "label": "Colour is a choice",
+          "title": "Medial habenula fibres — eight colourings",
+          "about": "Nerve fibres that carry pain information, labelled with a red fluorescent protein (tdTomato), in the medial habenula of a mouse. The habenula is rich in mu-opioid receptors, the same receptors morphine acts on. One section, eight colour choices: what you notice changes with the colour.",
+          "credit": "Barik Lab, IISc",
+          "maps": [
+            {
+              "name": "Red with green",
+              "src": "images/lab/mhb_0.webp",
+              "alt": "Fine red fibres on black with a few green points",
+              "note": "Red fibres on black, with a few green points."
+            },
+            {
+              "name": "Blue-green wash",
+              "src": "images/lab/mhb_1.webp",
+              "alt": "Fibres in green against a blue background",
+              "note": "A broad blue-green wash. The background lights up as much as the fibres."
+            },
+            {
+              "name": "Blue",
+              "src": "images/lab/mhb_2.webp",
+              "alt": "Fibres in bright blue on black",
+              "kind": "One colour",
+              "note": "Brightness alone carries the signal."
+            },
+            {
+              "name": "Banded",
+              "src": "images/lab/mhb_3.webp",
+              "alt": "The section in bands of red, green, blue and grey",
+              "kind": "Banded colours",
+              "note": "The brightness range is cut into bands. The same numbers now look like a different structure."
+            },
+            {
+              "name": "Cyan",
+              "src": "images/lab/mhb_4.webp",
+              "alt": "Fibres in pale cyan on black",
+              "kind": "One colour",
+              "note": "Brightness alone carries the signal."
+            },
+            {
+              "name": "Cyan with green",
+              "src": "images/lab/mhb_5.webp",
+              "alt": "Fibres in cyan on black with a few green points",
+              "note": "Cyan fibres, with a few green points."
+            },
+            {
+              "name": "Red",
+              "src": "images/lab/mhb_6.webp",
+              "alt": "Fibres in red on black",
+              "kind": "One colour",
+              "note": "Brightness alone carries the signal."
+            },
+            {
+              "name": "Yellow",
+              "src": "images/lab/mhb_7.webp",
+              "alt": "Fibres in yellow on black",
+              "kind": "One colour",
+              "note": "Brightness alone carries the signal."
+            }
+          ]
+        }
+      ]
     },
     {
       "number": "04",
@@ -148,7 +265,41 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9399436/"
         }
       ],
-      "pair_images": false
+      "pair_images": false,
+      "colour_sets": [
+        {
+          "label": "Colour is a choice",
+          "title": "ACC dopamine-D1 neurons — four colourings",
+          "about": "Two neurons in the anterior cingulate cortex of a mouse that carry the dopamine D1 receptor, labelled with a green fluorescent protein (GFP). The anterior cingulate is part of the brain's circuitry for how pain feels, not only where it is. One image, four colour choices.",
+          "credit": "Barik Lab, IISc",
+          "maps": [
+            {
+              "name": "Magenta and yellow",
+              "src": "images/lab/d1r_1.webp",
+              "alt": "Two neurons with long branches in magenta, with yellow cell bodies, on black",
+              "note": "Branches in magenta, cell bodies picked out in yellow."
+            },
+            {
+              "name": "Cyan on violet",
+              "src": "images/lab/d1r_2.webp",
+              "alt": "Two neurons in cyan on a violet background",
+              "note": "A violet ground: the empty space is no longer black."
+            },
+            {
+              "name": "Blue and yellow",
+              "src": "images/lab/d1r_3.webp",
+              "alt": "Two neurons in blue with yellow cell bodies on dark blue",
+              "note": "Fine branches nearly disappear into the dark blue."
+            },
+            {
+              "name": "Blue-green",
+              "src": "images/lab/d1r_4.webp",
+              "alt": "Two neurons in blue-green on black",
+              "note": "A cooler, quieter version of the same cells."
+            }
+          ]
+        }
+      ]
     },
     {
       "number": "05",
@@ -170,7 +321,43 @@
       "strip_label": "",
       "strip": [],
       "links": [],
-      "pair_images": false
+      "pair_images": false,
+      "colour_sets": [
+        {
+          "label": "Colour is a choice",
+          "title": "c-Fos in the central thalamus — four versions",
+          "about": "Neurons in the central thalamus of a mouse that were recently active during pain-related anxiety. Two fluorescence composites and two heat-map versions of the same region.",
+          "credit": "Barik Lab, IISc",
+          "maps": [
+            {
+              "name": "Fluorescence",
+              "src": "images/lab/cfos_2.webp",
+              "alt": "Fluorescence composite: blue, red and green dots, with a dense red patch on the right",
+              "note": "Three colour channels over black."
+            },
+            {
+              "name": "Fluorescence, closer",
+              "src": "images/lab/cfos_3.webp",
+              "alt": "Closer view of the dense red patch with green and yellow dots",
+              "note": "A closer look at the dense patch."
+            },
+            {
+              "name": "Heat map, violet base",
+              "src": "images/lab/cfos_1.webp",
+              "alt": "Heat-map version with a violet background and a rainbow-coloured patch",
+              "kind": "Rainbow-style scale",
+              "note": "Colours run violet, blue, green, yellow, red. The order is hard to read, and bands can look like structure."
+            },
+            {
+              "name": "Heat map",
+              "src": "images/lab/cfos_0.webp",
+              "alt": "Heat-map version of the same region",
+              "kind": "Rainbow-style scale",
+              "note": "Same idea, different framing."
+            }
+          ]
+        }
+      ]
     },
     {
       "number": "06",
@@ -187,6 +374,11 @@
           "image": "images/rewiring.jpg",
           "caption": "Rewiring",
           "type": "art"
+        },
+        {
+          "image": "images/lab/iba1.webp",
+          "caption": "Microglia (IBA1 staining), mouse hippocampus · Barik Lab, IISc",
+          "type": "science"
         }
       ],
       "strip_label": "",

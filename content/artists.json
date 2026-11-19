@@ -100,7 +100,7 @@
       "label": "Invited artist",
       "title": "Manika Kumari",
       "intro": "This work treats the body as a vessel for memory it cannot fully discharge — wrinkles, freckles, scars, sutures read as a trace left by experience that the mind has moved on from but the surface hasn't. Studies of skin in charcoal and pencil sit alongside a more speculative thread: a kinetic structure, still in concept, meant to enact how an unprocessed emotion changes shape as it passes from one body to the next — what breaks, what thickens, what residue it leaves behind.\n\nContact: [kmanika003@gmail.com](mailto:kmanika003@gmail.com)",
-      "details": "Charcoal and pencil, mostly on tinted paper · 2023–ongoing",
+      "details": "Charcoal and pencil on tinted paper, and paintings · 2023–ongoing",
       "coming_soon": false,
       "coming_soon_text": "",
       "sections": [
@@ -150,6 +150,42 @@
               "image": "images/studies_sheet.jpg",
               "caption": "A working sheet of studies of skin — folds, scars, sutures, freckling — the material this room's larger pieces are drawn from.",
               "alt": "Contact sheet of many small charcoal studies of skin texture"
+            }
+          ]
+        },
+        {
+          "label": "Recent work",
+          "layout": "row",
+          "items": [
+            {
+              "image": "images/manika_3.jpg",
+              "caption": "Untitled",
+              "alt": "Painting of children seated close together at the foot of a staircase, in yellow and red against violet walls"
+            },
+            {
+              "image": "images/manika_2.jpg",
+              "caption": "Untitled",
+              "alt": "Print of a stepped building with balconies in grey, plum and sage green, with small yellow blocks at the bottom"
+            },
+            {
+              "image": "images/manika_1.jpg",
+              "caption": "Untitled",
+              "alt": "Pale grey-white paint scraped across a tan ground, with bands and worn patches"
+            },
+            {
+              "image": "images/manika_4.jpg",
+              "caption": "Untitled",
+              "alt": "Painting of a person's face half hidden by hands, among orange jellyfish on deep purple"
+            },
+            {
+              "image": "images/manika_6.jpg",
+              "caption": "Untitled",
+              "alt": "Painting of a woman's face, eyes shut, tangled with orange jellyfish and thin orange lines on yellow, green and purple"
+            },
+            {
+              "image": "images/manika_5.jpg",
+              "caption": "Untitled",
+              "alt": "Painting of a woman's face with closed eyes against an orange sky above grey-blue waves, with fine white handwriting across her face"
             }
           ]
         }

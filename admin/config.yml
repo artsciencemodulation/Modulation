@@ -340,6 +340,91 @@ collections:
         - name: url
           label: Address
           widget: string
+      - name: colour_sets
+        label: Colour-map viewers ("Colour is a choice")
+        hint: One image shown in several colourings. Visitors pick a colour map and the image changes. Use one crop for all versions.
+        widget: list
+        required: false
+        collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - name: label
+          label: Small label above the title
+          widget: string
+          default: Colour is a choice
+        - name: title
+          label: Title
+          widget: string
+        - name: about
+          label: What the image shows (plain words)
+          widget: text
+        - name: credit
+          label: Credit line
+          widget: string
+          required: false
+        - name: status
+          label: Evidence status (optional)
+          widget: select
+          required: false
+          options:
+          - label: Peer-reviewed
+            value: peer-reviewed
+          - label: Preprint
+            value: preprint
+          - label: Unpublished lab data
+            value: unpublished lab data
+        - name: maps
+          label: Colour maps
+          widget: list
+          summary: '{{fields.name}}'
+          fields:
+          - name: name
+            label: Short name (shown on the button)
+            widget: string
+          - name: src
+            label: Image
+            widget: image
+          - name: alt
+            label: Describe the image for screen readers
+            widget: text
+          - name: kind
+            label: Kind of colour map (optional, shown in bold)
+            widget: string
+            required: false
+            hint: e.g. One colour, Banded colours, Rainbow-style scale
+          - name: note
+            label: One-line note
+            widget: string
+            required: false
+      - name: cards
+        label: Info cards
+        hint: A short boxed note under the panel, with optional links.
+        widget: list
+        required: false
+        collapsed: true
+        summary: '{{fields.title}}'
+        fields:
+        - name: label
+          label: Small label
+          widget: string
+        - name: title
+          label: Title
+          widget: string
+        - name: text
+          label: Text
+          widget: text
+        - name: links
+          label: Links
+          widget: list
+          required: false
+          summary: '{{fields.label}}'
+          fields:
+          - name: label
+            label: Link text
+            widget: string
+          - name: url
+            label: Address
+            widget: string
     - name: inroom
       label: In the room
       widget: object

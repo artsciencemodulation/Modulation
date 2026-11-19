@@ -106,6 +106,41 @@ function wireHome(h){
   render();
 }
 
+/* ---------- panel extras: colour-map viewer + info cards (content: exhibition.json → panels) ---------- */
+function panelExtras(p,i){
+  const sets=arr(p.colour_sets).map((st,si)=>{
+    const maps=arr(st.maps); if(!maps.length)return '';
+    const m0=maps[0];
+    return `<div class="cmap" data-set="${i}:${si}">
+      <span class="sci">${esc(st.label||'Colour is a choice')}</span>
+      <h4>${esc(st.title)}</h4>
+      ${st.about?`<p class="cm-about">${mdi(st.about)}</p>`:''}
+      <div class="cm-body">
+        <div class="cm-stage"><img class="cm-img" src="${esc(m0.src)}" alt="${esc(m0.alt||m0.name)}"></div>
+        <div class="cm-side">
+          <fieldset class="cm-pick"><legend>Choose a colour map</legend>${maps.map((m,mi)=>`<label class="cm-opt"><input type="radio" name="cm-${i}-${si}" value="${mi}"${mi?'':' checked'}><span>${esc(m.name)}</span></label>`).join('')}</fieldset>
+          <p class="cm-note" aria-live="polite">${m0.note?mdi(m0.note):''}</p>
+          <p class="cm-meta">${st.status?`<span class="cm-status">${esc(st.status)}</span> `:''}${esc(st.credit||'')}</p>
+        </div>
+      </div></div>`;}).join('');
+  const cards=arr(p.cards).map(c=>`<aside class="pcard"><span class="sci">${esc(c.label)}</span><h4>${esc(c.title)}</h4><div class="md">${md(c.text)}</div>${arr(c.links).length?`<div class="readmore">${arr(c.links).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join('')}</div>`:''}</aside>`).join('');
+  return (sets||cards)?`<div class="p-extra">${sets}${cards}</div>`:'';
+}
+function wireColour(x){
+  arr(x.panels).forEach((p,pi)=>{arr(p.colour_sets).forEach((st,si)=>{
+    const root=document.querySelector(`.cmap[data-set="${pi}:${si}"]`); if(!root)return;
+    const maps=arr(st.maps),img=root.querySelector('.cm-img'),note=root.querySelector('.cm-note');
+    let warmed=false;
+    function warm(){if(warmed)return;warmed=true;maps.forEach(m=>{const t=new Image();t.src=m.src;});}
+    function show(k){const m=maps[k]||maps[0];img.src=m.src;img.alt=m.alt||m.name;
+      note.innerHTML=(m.kind?`<b>${esc(m.kind)}.</b> `:'')+(m.note?mdi(m.note):'');}
+    root.addEventListener('change',e=>{if(e.target.name&&e.target.name.indexOf('cm-')===0){warm();show(+e.target.value);}});
+    root.addEventListener('pointerenter',warm,{once:true});
+    root.addEventListener('focusin',warm,{once:true});
+    show(0);
+  });});
+}
+
 function buildExhibition(x){
   const panels=arr(x.panels), room=x.inroom||{};
   return `<section class="block"><div class="wrap">
@@ -122,7 +157,7 @@ function buildExhibition(x){
           <div class="science-note">${mdi(p.text)}</div>
           ${strip.length?`<div class="lh-strip"><span class="lh-label">${esc(p.strip_label)}</span><div class="lh-row">${strip.map((s,j)=>`<button class="lh-btn" data-view="${i}:${imgs.length+j}" aria-label="View larger — ${esc(s.caption)}"><img src="${esc(s.image)}" alt="${esc(s.caption)}" loading="lazy"></button>`).join('')}</div></div>`:''}
           ${arr(p.links).length?`<div class="readmore">${arr(p.links).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join('')}</div>`:''}
-        </div></div>`;}).join('')}</div>
+        </div>${panelExtras(p,i)}</div>`;}).join('')}</div>
     ${room.show&&arr(room.images).length?`<div class="inroom"><span class="sci">${esc(room.label)}</span>
       <p class="dim measure">${mdi(room.text)}</p>
       <div class="inroom-row">${arr(room.images).map((r,j)=>`<button data-room="${j}" aria-label="View larger — ${esc(r.caption)}"><img src="${esc(r.image)}" alt="${esc(r.caption)}" loading="lazy"></button>`).join('')}</div></div>`:''}
@@ -130,6 +165,7 @@ function buildExhibition(x){
 }
 function wireExhibition(x){
   const panels=arr(x.panels);
+  wireColour(x);
   const bar=document.getElementById('panelbar'),wrap=document.getElementById('panels');
   function show(i){[...bar.children].forEach((b,j)=>b.setAttribute('aria-current',j===i));[...wrap.children].forEach((d,j)=>d.classList.toggle('active',j===i));bar.scrollIntoView({block:'start',behavior:'smooth'});}
   window.__gotoPanel=show;

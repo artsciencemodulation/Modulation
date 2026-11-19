@@ -101,3 +101,26 @@ a.tp-cta{text-decoration:none;display:inline-block}
 @media(max-width:900px){.mm-layout{grid-template-columns:1fr;grid-template-areas:"guide" "stage" "tools"}.mm-stage{position:static}}
 #route-makemark section.block{padding-top:clamp(1.8rem,4vw,3rem)}
 #route-makemark .head{margin-bottom:clamp(1.2rem,3vw,1.8rem)}
+
+/* ---------- panel extras: colour-map viewer + info cards ---------- */
+.p-extra{grid-column:1/-1;display:grid;gap:1.6rem;margin-top:.6rem}
+.cmap{border:1px solid var(--line-2);border-left:2px solid var(--fluor);border-radius:3px;padding:1.2rem 1.3rem 1.3rem;background:var(--stage-2)}
+.cmap h4,.pcard h4{font-family:var(--display);font-weight:300;font-size:clamp(1.2rem,2.4vw,1.55rem);margin:.5rem 0 .4rem}
+.cm-about{margin:0 0 1rem;color:var(--paper-dim);max-width:44rem;font-size:1.02rem}
+.cm-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:1.4rem;align-items:start}
+.cm-stage{background:#000;border:1px solid var(--line);border-radius:2px;overflow:hidden;aspect-ratio:16/11;display:flex;align-items:center;justify-content:center}
+.cm-img{width:100%;height:100%;object-fit:contain}
+.cm-pick{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem}
+.cm-pick legend{font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-faint);margin-bottom:.6rem;padding:0}
+.cm-opt{position:relative;cursor:pointer}
+.cm-opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.cm-opt span{display:block;font-family:var(--mono);font-size:.8rem;letter-spacing:.04em;color:var(--paper-dim);border:1px solid var(--line);border-radius:2px;padding:.4rem .65rem;background:var(--stage)}
+.cm-opt input:checked+span{color:var(--paper);border-color:var(--fluor)}
+.cm-opt input:focus-visible+span{outline:2px solid var(--fluor);outline-offset:2px}
+.cm-note{margin:1rem 0 0;min-height:3.2em;color:var(--paper);font-size:1rem;line-height:1.5}
+.cm-meta{margin:.8rem 0 0;font-family:var(--mono);font-size:.76rem;letter-spacing:.03em;color:var(--paper-faint);line-height:1.5}
+.cm-status{text-transform:uppercase;letter-spacing:.08em;color:var(--fluor);margin-right:.4rem}
+.pcard{border:1px solid var(--line-2);border-left:2px solid var(--ochre);border-radius:3px;padding:1.2rem 1.3rem;background:var(--stage-2);max-width:46rem}
+.pcard .sci{color:var(--ochre)}
+.pcard .md p{margin:.4rem 0;color:var(--paper-dim);font-size:1.02rem}
+@media (max-width:760px){.cm-body{grid-template-columns:1fr}}
