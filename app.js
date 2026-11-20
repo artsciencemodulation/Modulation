@@ -74,8 +74,7 @@ function buildHome(h){
         <div class="dial-labels"><span>felt</span><span class="measured-l">measured</span><span class="hero-count" id="heroCount"></span></div>
         <input type="range" min="0" max="100" value="0" class="slider" id="dial" aria-label="Move from felt to measured">
         <div class="dial-caption">
-          <span class="felt-c" id="feltCap"></span>
-          <span class="measured-c" id="measuredCap" style="opacity:0;position:absolute;inset:0"></span>
+          <div class="cap-stack"><span class="felt-c" id="feltCap"></span><span class="measured-c" id="measuredCap" style="opacity:0"></span></div>
           <span class="dial-tag">${esc(h.dial_hint)}</span><span class="dial-tag" id="heroCredit" style="color:var(--paper-faint)"></span>
         </div>
       </div>
@@ -98,8 +97,8 @@ function wireHome(h){
     fc.innerHTML=mdi(p.felt_caption);mc.innerHTML=mdi(p.measured_caption);
     document.getElementById('heroCredit').textContent=p.credit||'';
     document.getElementById('heroCount').textContent=pairs.length>1?`Pair ${i+1} of ${pairs.length}`:'';
-    dial.value=0;M.style.opacity=0;fc.style.opacity=1;mc.style.opacity=0;}
-  dial.addEventListener('input',()=>{const v=dial.value/100;M.style.opacity=v;fc.style.opacity=1-v;mc.style.opacity=v;});
+    dial.value=0;M.style.opacity=0;F.style.opacity=1;fc.style.opacity=1;mc.style.opacity=0;}
+  dial.addEventListener('input',()=>{const v=dial.value/100;M.style.opacity=v;F.style.opacity=Math.min(1,2*(1-v));fc.style.opacity=1-v;mc.style.opacity=v;});
   const n=document.getElementById('heroNext'),p=document.getElementById('heroPrev');
   if(n)n.addEventListener('click',()=>{i=(i+1)%pairs.length;render();});
   if(p)p.addEventListener('click',()=>{i=(i-1+pairs.length)%pairs.length;render();});

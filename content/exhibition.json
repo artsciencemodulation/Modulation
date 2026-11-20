@@ -23,6 +23,11 @@
           "image": "images/lab/minis_raw.webp",
           "caption": "Miniscope calcium imaging, mouse thalamus during cold pain — a single frame from the recording · Barik Lab, IISc",
           "type": "science"
+        },
+        {
+          "image": "images/lab/oxali_art.webp",
+          "caption": "The same recording, re-coloured until it reads less like data and more like a pulse · stylised version of the miniscope recording",
+          "type": "composite"
         }
       ],
       "strip_label": "",

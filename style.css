@@ -63,7 +63,7 @@ section.block:first-child{border-top:0}
 .hero-sub{margin-top:1rem;font-size:clamp(1.05rem,2.2vw,1.35rem);color:var(--paper);max-width:34rem}
 .dialwrap{margin-top:clamp(2rem,5vw,3.4rem);display:grid;grid-template-columns:1fr;gap:1.2rem}
 .stage-img{position:relative;aspect-ratio:16/10;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:#000}
-.stage-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .stage-img .measured{opacity:0;transition:opacity .1s linear}
 .stage-tint{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,9,.5),transparent 55%);pointer-events:none}
 .dial{margin-top:.2rem}
@@ -72,8 +72,9 @@ section.block:first-child{border-top:0}
 input[type=range].slider{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--line);outline:none;cursor:pointer}
 input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--paper);border:2px solid var(--stage);box-shadow:0 0 0 1px var(--line)}
 input[type=range].slider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--paper);border:2px solid var(--stage)}
-.dial-caption{margin-top:1rem;min-height:3.4em;font-family:var(--display);font-weight:300;font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.4;position:relative}
-.dial-caption .felt-c,.dial-caption .measured-c{transition:opacity .25s}
+.dial-caption{margin-top:1rem;font-family:var(--display);font-weight:300;font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.4;position:relative}
+.dial-caption .cap-stack{display:grid}
+.dial-caption .felt-c,.dial-caption .measured-c{grid-area:1/1;transition:opacity .25s}
 .dial-caption .measured-c{color:var(--paper-dim)}
 .dial-tag{font-family:var(--mono);font-size:1.04rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-faint);display:block;margin-top:.6rem}
 

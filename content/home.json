@@ -11,7 +11,8 @@
       "measured_alt": "Fluorescence micrograph, mouse spinal cord",
       "felt_caption": "A painting tries to catch what pain *is like* from the inside.",
       "measured_caption": "The same territory, measured: fluorescence-labelled neurons in a mouse spinal cord section — a micrograph from the lab.",
-      "credit": "Left — painting, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc"
+      "credit": "Left — painting, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": false
     },
     {
       "felt": "images/micrograph_tacr1.jpg",
@@ -20,16 +21,78 @@
       "measured_alt": "Grpr+ neurons, parabrachial nucleus",
       "felt_caption": "Here the artist reworks a real circuit into something closer to feeling — bloom, spark, a private landscape.",
       "measured_caption": "The same circuit, measured: Grpr+ neurons in the parabrachial nucleus, unedited.",
-      "credit": "Left — digital work, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc"
+      "credit": "Left — digital work, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": false
     },
     {
-      "felt": "images/lab/oxali_art.webp",
-      "felt_alt": "Stylised version of a calcium-imaging movie: glowing purple and yellow blobs on black",
+      "felt": "images/pairs/rewired.webp",
+      "felt_alt": "Artwork: Rewired — painted filaments",
+      "measured": "images/pairs/d1r_1.webp",
+      "measured_alt": "Fluorescence micrograph: D1R neurons in the anterior cingulate cortex, with branching dendrites",
+      "felt_caption": "Pain can feel like something that has been rewired — fine filaments pulled tight and tangled.",
+      "measured_caption": "Measured: D1R-expressing neurons in the anterior cingulate cortex, with their long, branching dendrites.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/rewiring.webp",
+      "felt_alt": "Artwork: Rewiring",
+      "measured": "images/pairs/iba1.webp",
+      "measured_alt": "Fluorescence micrograph: IBA1-labelled microglia in the hippocampus",
+      "felt_caption": "A touch that has been rewired into pain.",
+      "measured_caption": "Measured: microglia (IBA1) in the hippocampus.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/chronic.webp",
+      "felt_alt": "Artwork: Chronic — spots like bruises",
+      "measured": "images/pairs/pbn_0.webp",
+      "measured_alt": "Fluorescence micrograph: c-Fos activity in the lateral parabrachial nucleus",
+      "felt_caption": "Chronic pain, felt as bruise-like spots that do not fade.",
+      "measured_caption": "Measured: c-Fos activity (green) in the lateral parabrachial nucleus, a region that lights up in chronic pain.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/sweet_sorrow.webp",
+      "felt_alt": "Artwork: Sweet Sorrow — a wire and a poppy",
+      "measured": "images/pairs/mhb_6.webp",
+      "measured_alt": "Fluorescence micrograph: tdTomato-labelled fibres from the medial habenula",
+      "felt_caption": "Relief that carries its own sorrow: a wire, a poppy.",
+      "measured_caption": "Measured: tdTomato-labelled fibres from the medial habenula, a region rich in opioid receptors.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/that_sinking_feeling.webp",
+      "felt_alt": "Artwork: That Sinking Feeling",
+      "measured": "images/pairs/cfos_3.webp",
+      "measured_alt": "Fluorescence micrograph: c-Fos in the central thalamus",
+      "felt_caption": "The sinking feeling that comes with pain-related anxiety.",
+      "measured_caption": "Measured: c-Fos activity (green) in the central thalamus.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/towards_heaven.webp",
+      "felt_alt": "Artwork: Towards Heaven",
       "measured": "images/lab/minis_raw.webp",
-      "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in cyan and blue on black",
-      "felt_caption": "The same recording, re-coloured until it reads less like data and more like a pulse.",
-      "measured_caption": "The same recording, measured: neurons in a mouse thalamus imaged live as cold becomes painful. Each bright patch is one cell's calcium signal.",
-      "credit": "Left — stylised version · Right — still from a miniscope recording, Barik Lab, IISc"
+      "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in blue on black",
+      "felt_caption": "Cold, slowly turning into pain.",
+      "measured_caption": "Measured: neurons in a mouse thalamus imaged live as cold becomes painful. Each bright patch is one cell's calcium signal.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — still from a miniscope recording, Barik Lab, IISc",
+      "needs_approval": true
+    },
+    {
+      "felt": "images/pairs/pushing_through.webp",
+      "felt_alt": "Artwork: Pushing Through",
+      "measured": "images/lh_1.jpg",
+      "measured_alt": "Fluorescence micrograph: lateral hypothalamus",
+      "felt_caption": "Pushing through pain when other needs and stresses are pulling at you too.",
+      "measured_caption": "Measured: the lateral hypothalamus, where needs and stress compete with pain.",
+      "credit": "Left — artwork, Asmita Sarkar · Right — fluorescence micrograph, Barik Lab, IISc",
+      "needs_approval": true
     }
   ],
   "quote": "The paintings try to catch the experience of pain rather than accurately illustrating any scientific process.",

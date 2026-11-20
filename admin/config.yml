@@ -208,6 +208,11 @@ collections:
       - name: credit
         label: Credit line
         widget: string
+      - name: needs_approval
+        label: Draft — still needs Asmita's approval
+        widget: boolean
+        default: true
+        required: false
     - name: quote
       label: Quotation
       widget: text
