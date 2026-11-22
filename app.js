@@ -425,6 +425,7 @@ function buildLineage(l){
     ${head(l.label,l.heading)}
     <p class="measure dim" style="margin-top:-1rem;margin-bottom:2rem">${mdi(l.intro)}</p>
     <div class="lineage">${arr(l.cards).map(c=>`<div class="lin"><h3>${esc(c.title)}</h3><div class="who">${esc(c.artist)}</div><p>${mdi(c.text)}</p>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.link_label||'View ↗')}</a>`:''}</div>`).join('')}</div>
+    ${arr(l.science_links).length?`<div class="lin-sci" style="margin-top:3rem">${l.science_label?`<span class="sci">${esc(l.science_label)}</span>`:''}${l.science_intro?`<p class="measure dim" style="margin:.6rem 0 1.6rem">${mdi(l.science_intro)}</p>`:''}<div class="lineage">${arr(l.science_links).map(c=>`<div class="lin"><h3>${esc(c.title)}</h3><div class="who">${esc(c.source)}</div><p>${mdi(c.text)}</p>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.link_label||'Open ↗')}</a>`:''}</div>`).join('')}</div></div>`:''}
     ${l.essay?`<div class="lin-essay"><span class="sci">${esc(l.essay_label)}</span><div class="md">${md(l.essay)}</div></div>`:''}
     ${l.note?`<p class="dim" style="font-size:.82rem;margin-top:1.4rem">${mdi(l.note)}</p>`:''}
   </div></section>`;

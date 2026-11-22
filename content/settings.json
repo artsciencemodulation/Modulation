@@ -8,7 +8,7 @@
     "display_font": "Fraunces"
   },
   "banner": {
-    "show": true,
+    "show": false,
     "text": "Preview build · look & feel for review"
   },
   "nav": {

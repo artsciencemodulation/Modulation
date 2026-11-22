@@ -7,7 +7,7 @@
 # ─────────────────────────────────────────────────────────────
 backend:
   name: git-gateway
-  repo: YOUR-GITHUB-USERNAME/modulation
+  repo: artsciencemodulation/Modulation
   branch: main
   identity_url: https://auth.decapbridge.com/sites/YOUR-SITE-ID
   gateway_url: https://gateway.decapbridge.com
@@ -15,8 +15,8 @@ backend:
     update: Edit {{collection}} → {{slug}}
     uploadMedia: Upload {{path}}
     deleteMedia: Delete {{path}}
-site_url: https://YOUR-GITHUB-USERNAME.github.io/modulation/
-display_url: https://YOUR-GITHUB-USERNAME.github.io/modulation/
+site_url: https://artsciencemodulation.github.io/Modulation/
+display_url: https://artsciencemodulation.github.io/Modulation/
 local_backend: true
 media_folder: images
 public_folder: images
@@ -954,6 +954,35 @@ collections:
         widget: string
       - name: url
         label: Museum page address
+        widget: string
+    - name: science_label
+      label: Science links — small label
+      widget: string
+      required: false
+    - name: science_intro
+      label: Science links — introduction
+      widget: text
+      required: false
+    - name: science_links
+      label: Science links (from the lab)
+      widget: list
+      required: false
+      summary: '{{fields.title}} — {{fields.source}}'
+      fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: source
+        label: Where it is from
+        widget: string
+      - name: text
+        label: One line on what it is
+        widget: text
+      - name: link_label
+        label: Link text
+        widget: string
+      - name: url
+        label: Address (https://…)
         widget: string
     - name: essay_label
       label: Essay heading
