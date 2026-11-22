@@ -1,4 +1,9 @@
 /* Additions for the hosted, editable build. The base design lives in style.css. */
+/* Home dial: white mat around both images (felt and measured), as a share of stage width. Tune here. */
+:root{--dial-mat:6cqw}
+.stage-img{container-type:inline-size;background:#fff}
+.stage-img img{inset:var(--dial-mat);width:calc(100% - 2*var(--dial-mat));height:calc(100% - 2*var(--dial-mat))}
+.stage-tint{display:none}
 a.brand{text-decoration:none;display:inline-flex;align-items:baseline}
 .loading{padding:6rem 0;color:var(--paper-faint);font-family:var(--mono)}
 .route{display:none}

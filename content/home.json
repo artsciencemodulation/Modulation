@@ -26,7 +26,7 @@
     },
     {
       "felt": "images/pairs/rewired.webp",
-      "felt_alt": "Artwork: Rewired — painted filaments",
+      "felt_alt": "Painting: a tangle of fine filaments in purple and blue, with an eye at the right",
       "measured": "images/pairs/d1r_1.webp",
       "measured_alt": "Fluorescence micrograph: D1R neurons in the anterior cingulate cortex, with branching dendrites",
       "felt_caption": "Pain can feel like something that has been rewired — fine filaments pulled tight and tangled.",
@@ -76,7 +76,7 @@
     },
     {
       "felt": "images/pairs/towards_heaven.webp",
-      "felt_alt": "Artwork: Towards Heaven",
+      "felt_alt": "Painting: a foot over orange flames and purple washes",
       "measured": "images/lab/minis_raw.webp",
       "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in blue on black",
       "felt_caption": "Cold, slowly turning into pain.",
@@ -86,7 +86,7 @@
     },
     {
       "felt": "images/pairs/pushing_through.webp",
-      "felt_alt": "Artwork: Pushing Through",
+      "felt_alt": "Painting: a face with closed eyes in teal, purple and ochre washes",
       "measured": "images/lh_1.jpg",
       "measured_alt": "Fluorescence micrograph: lateral hypothalamus",
       "felt_caption": "Pushing through pain when other needs and stresses are pulling at you too.",
