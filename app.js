@@ -93,7 +93,7 @@ function wireHome(h){
   const dial=document.getElementById('dial'),F=document.getElementById('feltImg'),M=document.getElementById('measuredImg'),
         fc=document.getElementById('feltCap'),mc=document.getElementById('measuredCap');
   function render(){const p=pairs[i];
-    F.src=p.felt||'';F.alt=p.felt_alt||'';M.src=p.measured||'';M.alt=p.measured_alt||'';
+    F.src=p.felt||'';F.alt=p.felt_alt||'';F.style.transform=(+p.felt_scale&&+p.felt_scale!==1)?`scale(${+p.felt_scale})`:'';M.src=p.measured||'';M.alt=p.measured_alt||'';
     fc.innerHTML=mdi(p.felt_caption);mc.innerHTML=mdi(p.measured_caption);
     document.getElementById('heroCredit').textContent=p.credit||'';
     document.getElementById('heroCount').textContent=pairs.length>1?`Pair ${i+1} of ${pairs.length}`:'';

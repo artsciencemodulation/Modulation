@@ -77,6 +77,7 @@
     {
       "felt": "images/pairs/towards_heaven.webp",
       "felt_alt": "Painting: a foot over orange flames and purple washes",
+      "felt_scale": 0.8,
       "measured": "images/lab/minis_raw.webp",
       "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in blue on black",
       "felt_caption": "Cold, slowly turning into pain.",
