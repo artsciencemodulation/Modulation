@@ -25,7 +25,7 @@ auth:
   first_name_claim: first_name
   last_name_claim: last_name
   avatar_url_claim: avatar_url
-  site_url: https://artsciencemodulation.github.io/Modulation/
+site_url: https://artsciencemodulation.github.io/Modulation/
 display_url: https://artsciencemodulation.github.io/Modulation/
 local_backend: true
 media_folder: images
