@@ -2,15 +2,11 @@
   "statement": "Two visual artists, **Khushbu Patel** and **Manika K**, were invited to engage with the themes of sensation and pain, informed by insight from neuroscience. Their creations retain their artistic subjectivity and speculative imagination.",
   "artists": [
     {
-      "name": "Khushbu Patel",
-      "nav_label": "Diary Pages",
-      "slug": "diary",
-      "show_in_nav": true,
-      "label": "Invited artist",
-      "title": "Diary Pages — Khushbu Patel",
-      "intro": "This work takes the form of a diary — not to document events, but to trace the undercurrents of experience. Page by page it moves through quiet encounters: attraction, distance, touch, introspection. Some images slip into the surreal; others carry echoes of Indian miniature painting, where scale and detail compress complex emotion into small spaces.",
       "details": "Untitled · watercolour on paper · 9 × 10 in · 2016–ongoing",
-      "coming_soon": false,
+      "show_in_nav": true,
+      "name": "Khushbu Patel",
+      "slug": "diary",
+      "intro": "This work takes the form of a diary — not to document events, but to trace the undercurrents of experience. Page by page it moves through quiet encounters: attraction, distance, touch, introspection. Some images slip into the surreal; others carry echoes of Indian miniature painting, where scale and detail compress complex emotion into small spaces.",
       "sections": [
         {
           "label": "The object",
@@ -89,20 +85,29 @@
               "alt": "A working contact sheet, before individual spreads were shot."
             }
           ]
+        },
+        {
+          "layout": "row",
+          "label": "skin",
+          "items": [
+            {
+              "image": "images/whatsapp-image-2026-09-05-at-19.14.24.jpeg",
+              "caption": "skin 1"
+            }
+          ]
         }
-      ]
+      ],
+      "label": "Invited artist",
+      "nav_label": "Diary Pages",
+      "title": "Diary Pages — Khushbu Patel",
+      "coming_soon": false
     },
     {
-      "name": "Manika Kumari",
-      "nav_label": "Manika K",
-      "slug": "manika",
-      "show_in_nav": true,
-      "label": "Invited artist",
-      "title": "Manika Kumari",
-      "intro": "This work treats the body as a vessel for memory it cannot fully discharge — wrinkles, freckles, scars, sutures read as a trace left by experience that the mind has moved on from but the surface hasn't. Studies of skin in charcoal and pencil sit alongside a more speculative thread: a kinetic structure, still in concept, meant to enact how an unprocessed emotion changes shape as it passes from one body to the next — what breaks, what thickens, what residue it leaves behind.\n\nContact: [kmanika003@gmail.com](mailto:kmanika003@gmail.com)",
       "details": "Charcoal and pencil on tinted paper, and paintings · 2023–ongoing",
-      "coming_soon": false,
-      "coming_soon_text": "",
+      "show_in_nav": true,
+      "name": "Manika Kumari",
+      "slug": "manika",
+      "intro": "This work treats the body as a vessel for memory it cannot fully discharge — wrinkles, freckles, scars, sutures read as a trace left by experience that the mind has moved on from but the surface hasn't. Studies of skin in charcoal and pencil sit alongside a more speculative thread: a kinetic structure, still in concept, meant to enact how an unprocessed emotion changes shape as it passes from one body to the next — what breaks, what thickens, what residue it leaves behind.\n\nContact: [kmanika003@gmail.com](mailto:kmanika003@gmail.com)",
       "sections": [
         {
           "label": "Temporalities, 2023",
@@ -189,7 +194,12 @@
             }
           ]
         }
-      ]
+      ],
+      "coming_soon_text": "",
+      "label": "Invited artist",
+      "nav_label": "Manika K",
+      "title": "Manika Kumari",
+      "coming_soon": false
     }
   ]
 }
