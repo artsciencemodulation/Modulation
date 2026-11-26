@@ -2,7 +2,7 @@
   "eyebrow": "A portal on the art and science of the senses — with a focus on pain",
   "title": "Modulation",
   "intro": "In neuroscience, the word for treating pain is *modulating* it. In painting and in music, modulation is the blending of rough edges, the synthesis of tone into harmony. One word, three fields — and the spine of this portal.",
-  "dial_hint": "Drag — art and science are one object at two settings · arrows for another pair",
+  "dial_hint": "Drag — art and science are one object at two settings · arrows for another pairtygdiu",
   "pairs": [
     {
       "felt": "images/pain_in_the_brain.jpg",
@@ -75,15 +75,15 @@
       "needs_approval": true
     },
     {
+      "needs_approval": true,
+      "measured": "images/lab/minis_raw.webp",
       "felt": "images/pairs/towards_heaven.webp",
+      "measured_caption": "Measured: neurons in a mouse thalamus imaged live as cold becomes painful. Each bright patch is one cell's calcium signal.",
+      "felt_caption": "Cold, slowly turning into pain.",
+      "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in blue on black",
       "felt_alt": "Painting: a foot over orange flames and purple washes",
       "felt_scale": 0.8,
-      "measured": "images/lab/minis_raw.webp",
-      "measured_alt": "Frame from a miniscope calcium-imaging movie: a few small cells lit in blue on black",
-      "felt_caption": "Cold, slowly turning into pain.",
-      "measured_caption": "Measured: neurons in a mouse thalamus imaged live as cold becomes painful. Each bright patch is one cell's calcium signal.",
-      "credit": "Left — artwork, Asmita Sarkar · Right — still from a miniscope recording, Barik Lab, IISc",
-      "needs_approval": true
+      "credit": "Left — artwork, Asmita Sarkar · Right — still from a miniscope recording, Barik Lab, IISc"
     },
     {
       "felt": "images/pairs/pushing_through.webp",
