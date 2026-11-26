@@ -85,16 +85,6 @@
               "alt": "A working contact sheet, before individual spreads were shot."
             }
           ]
-        },
-        {
-          "layout": "row",
-          "label": "skin",
-          "items": [
-            {
-              "image": "images/whatsapp-image-2026-09-05-at-19.14.24.jpeg",
-              "caption": "skin 1"
-            }
-          ]
         }
       ],
       "label": "Invited artist",
