@@ -4,7 +4,7 @@
   "browser_title": "Modulation — exploring the art and science of sensation",
   "theme": {
     "background": "dark",
-    "accent": "#E0177F",
+    "accent": "#e598c0",
     "display_font": "Fraunces"
   },
   "banner": {
@@ -12,19 +12,19 @@
     "text": "Preview build · look & feel for review"
   },
   "nav": {
-    "home": "Home",
-    "exhibition": "The exhibition",
-    "takepart": "Take part",
-    "workshops": "Workshops",
+    "show_lineage": true,
+    "show_workshops": true,
     "lineage": "Lineage",
+    "workshops": "Workshops",
+    "exhibition": "The exhibition",
     "people": "Contributors",
     "show_exhibition": true,
-    "show_takepart": true,
-    "show_workshops": true,
-    "show_lineage": true,
     "show_people": true,
+    "takepart": "Take part",
     "makemark": "Make a mark",
-    "show_makemark": true
+    "show_takepart": true,
+    "show_makemark": true,
+    "home": "Home"
   },
   "footer": {
     "supported_by": "A Seed Grant 2025–2026 from the Manipal Academy of Higher Education",
